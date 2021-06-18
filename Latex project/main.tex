@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+  % If using pdflatex:
+  
+\usepackage[T2A, T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{blue!40!black}
+\colorlet{accent}{blue!60!green!75!black}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Ivan Medvedev}
+%\tagline{Python Developer \& Machine Learning Engineer}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{2.8cm}{photo}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{iv.medvedev179@gmail.com}
+    %\phone{+7-999-985-9331}
+  \location{Moscow, Russia}
+  
+%   \linkedin{linkedin.com/in/ismailshaikh}
+%    \twitter{@i4ismaill}
+    
+%    github: https://github.com/anastasiya-zhiboedova
+   \github{github.com/med-iv}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+
+\cvsection[page1sidebar]{\textbf{Experience}}
+
+\cvevent{Python Developer / Scala Developer}{Institute for System Programming RAN}{Jul 2019 -- Ongoing}{Russia, Moscow}
+\begin{itemize}
+\item (Python, Flask, scikit-learn, PyTorch, SciPy, networkx, matplotlib) Checking ml-hypothesis and building microservices
+\item (Scala, Play, Akka, Akka-Streams, Slick, Sangria) Microservices integration and building pipelines 
+\item (Gatling, InfluxDB, Grafana) Load testing and service monitoring
+\item (SQL, pgAdmin4) Postgres monitoring
+\item (Bash, Docker, Gitlab-CI) Making CI/CD actions, deployment scripts and backup-restore scripts for Postgres and Solr
+\end{itemize}
+
+
+\cvevent{Teacher}{Calculus course, School No. 179 Moscow}{Jan 2017 -- May 2017}{Russia, Moscow}
+
+
+
+\cvsection[page1sidebar]{ML Competitions}
+
+\cvachievement{Ya-Profi ML-track 2021 - Winner}{}
+
+\divider
+
+\cvsection[page1sidebar]{Courses}
+
+\cvcours{Functional Programming Principles in Scala}{Coursera}
+
+Introduction to functional programming, designing immutable data structures
+
+\cvcours{Introduction to Scala}{Stepik}
+
+
+
+\cvcours{Courses of Mathematical Statistics}{Stepik}
+
+The course of probability theory, mathematical statistics (linear regression, statistics, Student’s distribution)
+
+
+\cvcours{Machine Learning}{Coursera, HSE}
+The tasks of classification, regression, deep learning
+
+
+\divider
+
+% \cvsection{A Day of My Life}
+
+% % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% % \wheelchart{outer radius}{inner radius}{
+% % comma-separated list of value/text width/color/detail}
+% % Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% % \wheelchart{1.5cm}{0.5cm}{%
+% %   25/10em/accent!30/\footnotesize\\[1ex]Sleeping \& dreaming about work,
+% %   20/9em/accent!60/\footnotesize\\[1ex]Spending time with family,
+% %   5/13em/accent!10/\footnotesize\\[1ex]Hobbies,
+% %   20/15em/accent!40/\footnotesize\\[1ex]Working with stakeholders to define smooth business continuity,
+% %   30/10em/accent/\footnotesize\\[1ex]Overseeing provision of end-user services\, including help desk and technical support services,
+% %   5/8em/accent!20/\footnotesize\\[1ex]Planning out task for upcoming day
+% % }
+
+% \wheelchart{1.5cm}{0.5cm}{%
+%   6/8em/accent!30/{Sleep and eat}, 
+%   4/8em/accent!14/{Socializing},
+%   3/7em/accent!22/{Learning language},
+%   8/8em/accent!55/{Make my to do list},
+%   2/10em/accent!10/{Sports and relaxation},
+%   4/20em/accent!20/{Spending time with family}
+% }
+
+\clearpage
+
+\end{document}
